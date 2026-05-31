@@ -367,7 +367,8 @@ main {
 
 .social-links {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .social-item {
@@ -554,15 +555,35 @@ main {
     color: var(--accent-1);
 }
 
+.project-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
 .project-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     color: var(--text-secondary);
-    font-size: 1.2rem;
-    margin-left: 15px;
+    font-size: 0.85rem;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--card-border);
+    text-decoration: none;
     transition: var(--transition);
+}
+
+.project-links a i {
+    font-size: 1rem;
 }
 
 .project-links a:hover {
     color: var(--accent-1);
+    background: rgba(37, 99, 235, 0.1);
+    border-color: var(--accent-1);
 }
 
 .project-card h3 {
